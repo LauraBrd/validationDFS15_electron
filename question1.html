@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Questionnaire</title>
+  </head>
+  <body>
+    <div class="content">
+        <div class="left">
+            <h1>Combien y a-t-il de planètes dans le système solaire ?</h1>
+            <img class="imgQuestion" src="image/systeme.png">
+        </div>
+        
+        <div class="formQuestion">
+            <form action="">
+                <div class="reponse">
+                    <p>1/3</p>
+                    <h2>Je pense que ça doit être ...</h2><br>
+                    <input type="radio" name="reponse" id="6" value="6">6<br>
+                    <input type="radio" name="reponse" id="7" value="7">7<br>
+                    <input type="radio" name="reponse" id="8" value="8">8<br>
+                    <input type="radio" name="reponse" id="9" value="9">9<br>
+                </div>
+                <a href="question2.html">question 2</a>
+                <input type="submit" value="Valider" id="validQuestion1">
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

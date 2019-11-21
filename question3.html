@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Questionnaire</title>
+  </head>
+  <body>
+    <div class="content">
+        <div class="left">
+            <h1>Qu'est ce que c'est ? (voir image)</h1>
+            <img class="imgQuestion" src="image/galaxie.jpg">
+        </div>
+        
+        <div class="formQuestion">
+            <form action="">
+                <div class="reponse">
+                    <p>3/3</p>
+                    <h2>Facile normalement...</h2><br>
+                    <input type="radio" name="reponse" id="2" value="Un trou noir">Un trou noir<br>
+                    <input type="radio" name="reponse" id="1" value="Une galaxie">Une galaxie<br>
+                    <input type="radio" name="reponse" id="3" value="Une supernova">Une supernova<br>
+                </div>
+                    
+                <a href="resultat.html">Résultats</a>
+                <input type="submit" value="Valider" id="validQuestion3">
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

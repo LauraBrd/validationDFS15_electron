@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div class="bienvenue">
+      <h1>Bienvenue</h1>
+    </div>
+    <div class="left">
+      <h2>Test de connaissances</h2></br>
+      <p>3 questions</p></br>
+      <img src="">
+    </div>
+    <div class="form">
+      <label for="prenom">Nom</label>
+      <input type="text" id="nom" name="nom" placeholder="">
+
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" placeholder="">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="">
+
+    
+      <input type="submit" value="Démarrer" id="demarrer">
+
+    </div>
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

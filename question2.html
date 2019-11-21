@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Questionnaire</title>
+  </head>
+  <body>
+    <div class="content">
+        <div class="left">
+            <h1>Quelle est la vitesse de la lumière ?</h1>
+            <img class="imgQuestion" src="image/lumiere.jpg">
+        </div>
+        
+        <div class="formQuestion">
+            <form action="">
+                <div class="reponse">
+                    <p>2/3</p>
+                    <h2>Mmh... difficile...</h2><br>
+                    <input type="radio" name="reponse" id="1" value="1,08 x 10^9 km/h">1,08 x 10^9 km/h<br>
+                    <input type="radio" name="reponse" id="2" value="0,08 x 10^9 km/h">0,08 x 10^9 km/h<br>
+                    <input type="radio" name="reponse" id="3" value="3,08 x 10^9 km/h">3,08 x 10^9 km/h<br>
+                </div>
+                <a href="question3.html">question 3</a>
+                <input type="submit" value="Valider" id="validQuestion2">
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
