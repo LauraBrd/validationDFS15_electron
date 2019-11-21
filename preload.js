@@ -109,14 +109,44 @@ window.addEventListener('DOMContentLoaded', () => {
           window.location.href = "resultat.html";
         }
       }
+
+      // Calcul du résultat
+      if(valeur1 == reponseQ1) {
+        res1 = 1;
+      } else {
+        res1 = 0;
+      }
+
+      if(valeur2 == reponseQ2) {
+        res2 = 1;
+      } else {
+        res2 = 0;
+      }
+
+      if(valeur2 == reponseQ2) {
+        res3 = 1;
+      } else {
+        res3 = 0;
+      }
+
+      const resTotal = res1+res2+res3;
+
+      document.getElementsById("totalResult").innerHTML = resTotal;
     })
   }
 
 
-  // Calcul du résultat
 
 
 
+    //var chaineJSON = JSON.stringify(resultats);
+    //alert(chaineJSON);
+    // TABLEAU JSON
+    //var resultats = {};
+    //resultats.resultat1 = 6;
+    //resultats.resultat2 = 4;
+   // var chaineJSON = JSON.stringify(resultats);
+    //console.log(chaineJSON);
 
 
   /*
@@ -156,7 +186,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     })
   }
-
+      /////////// OU BIEN /////////
       /*
       doc = new PDFDocument;
       doc.pipe.fs.createWriteStream('output.pdf')
@@ -174,7 +204,7 @@ window.addEventListener('DOMContentLoaded', () => {
       doc.end();
       */
 
-
+      /////////// OU BIEN /////////
       /*
       var doc = new jsPDF();
       doc.text('Hello, world.', 20, 20);
@@ -186,17 +216,5 @@ window.addEventListener('DOMContentLoaded', () => {
       var data = doc.output();
       fs.writeFileSync('./document.pdf', data, 'binary');
       */
-
-
-
-
-    //var chaineJSON = JSON.stringify(resultats);
-    //alert(chaineJSON);
-    // TABLEAU JSON
-    //var resultats = {};
-    //resultats.resultat1 = 6;
-    //resultats.resultat2 = 4;
-   // var chaineJSON = JSON.stringify(resultats);
-    //console.log(chaineJSON);
 
 })
